@@ -1,0 +1,6 @@
+Allure Commands:
+npm install -g allure-commandline --save-dev
+allure generate ./folder
+allure open
+
+https://gist.github.com/cecilemuller/437d7340b9f095cf5635dc9780a05092  - Run Docker Compose + in Github Action
