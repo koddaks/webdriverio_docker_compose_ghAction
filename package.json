@@ -18,11 +18,11 @@
   "scripts": {
     "wdio": "wdio run wdio.conf.js",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "test": "npm run wdio || npm run posttest && npx allure serve && npm allure open",
+    "test": "npm run wdio || npm run posttest && allure serve",
     "posttest": "npm run allure:report",
     "launch_report": "npx allure serve",
     "allure:generate": "allure generate allure-results",
-    "allure-open": "npm allure open"
+    "allure-open": "allure open"
   },
   "dependencies": {
     "allure-commandline": "^2.18.1",
