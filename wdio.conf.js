@@ -12,9 +12,9 @@ exports.config = {
     // from which `wdio` was called.
     //
     //Server Configurations:
-    // hostname: 'localhost',
-    // port: 4444,
-    // path: '/',
+    hostname: 'localhost',
+    port: 4444,
+    path: '/',
     //
     // The specs are defined as an array of spec files (optionally using wildcards
     // that will be expanded). The test for each spec file will be run in a separate
