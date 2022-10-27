@@ -16,4 +16,4 @@ class ElasticSipTrunkingPage {
   
 }
 
-export default ElasticSipTrunkingPage
+module.exports = new ElasticSipTrunkingPage();

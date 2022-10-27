@@ -3,7 +3,6 @@ class SmsApiPage {
  
    
  }
- 
- export default SmsApiPage
+ module.exports = new SmsApiPage();
 
  

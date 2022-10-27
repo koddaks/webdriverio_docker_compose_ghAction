@@ -20,5 +20,5 @@ class SignUpPage {
   }
 }
 
-export default SignUpPage
+module.exports = new SignUpPage();
 

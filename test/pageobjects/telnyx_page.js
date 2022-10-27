@@ -4,5 +4,6 @@ class TelnyxPage extends Page {
   open (path) {
   return browser.url(`https://telnyx.com/${path}`)
 }
+
 }
 module.exports = new TelnyxPage();
