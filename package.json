@@ -17,12 +17,16 @@
   },
   "scripts": {
     "wdio": "wdio run wdio.conf.js",
+    "wdio_docker": "wdio run wdio.docker.conf.js",
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "test": "npm run wdio || npm run posttest && allure serve",
     "posttest": "npm run allure:report",
     "launch_report": "npx allure serve",
     "allure:generate": "allure generate allure-results",
-    "allure-open": "allure open"
+    "allure-open": "allure open",
+    "docker_up": "docker-compose -f ./selenium-4-grid.yml up",
+    "docker_down": "docker-compose -f ./selenium-4-grid.yml down",
+    "test_with_docker": "npm run wdio_docker && npm run posttest && npm run docker_down"
   },
   "dependencies": {
     "allure-commandline": "^2.18.1",

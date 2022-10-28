@@ -28,8 +28,17 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests-->Make Allure-report-->Stop containers
-      run: npm run test_with_docker
+    - name: Run tests
+      run: npm run wdio
+
+    - name: Run Allure report
+      run: npm run allure:report
+
+    - name: Stop containers
+      if: always()
+      run: docker-compose -f "selenium-4-grid.yml" down
+    
+    
     
     - name: Deploy 🚀
       if: always()
