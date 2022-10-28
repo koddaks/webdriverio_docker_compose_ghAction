@@ -44,7 +44,7 @@ class MainPage {
    get listOfAwardsBestMomentumLeader() {
     return $('[src*="MomentumLeader"]');
    }
-   get listOfAwardsBestMostImplementable() {
+   get listOfAwardsMostLikelyToRecommend() {
     return $('[src*="MostLikelyToRecommend"]');
    }
 

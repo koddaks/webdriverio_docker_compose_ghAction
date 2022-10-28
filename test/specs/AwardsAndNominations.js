@@ -7,13 +7,15 @@ describe("Awards and nominations for 2022 year TC-003", () => {
     await TelnyxPage.open('');
     await Base.cookiesButton.click();
     MainPage.listOfAwards.scrollIntoView();
-    MainPage.listOfAwardsBestMomentumLeader.isDisplayed();
-    MainPage.listOfAwardsBestMostImplementable.isDisplayed();
-    MainPage.listOfAwardsBestRelationship.isDisplayed();
     MainPage.listOfAwardsBestResults.isDisplayed();
     MainPage.listOfAwardsBestUsability.isDisplayed();
-    MainPage.listOfAwardsEaseOfUse.isDisplayed();
     MainPage.listOfAwardsLeader.isDisplayed();
+    MainPage.listOfAwardsBestMomentumLeader.isDisplayed();
+    MainPage.listOfAwardsMostLikelyToRecommend.isDisplayed();
+    // MainPage.listOfAwardsBestMostImplementable.isDisplayed();
+    // MainPage.listOfAwardsBestRelationship.isDisplayed();
+    // MainPage.listOfAwardsEaseOfUse.isDisplayed();
+   
     
   });
 });
