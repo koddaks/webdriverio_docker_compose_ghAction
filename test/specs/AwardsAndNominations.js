@@ -7,11 +7,15 @@ describe("Awards and nominations for 2022 year TC-003", () => {
     await TelnyxPage.open('');
     await Base.cookiesButton.click();
     MainPage.listOfAwards.scrollIntoView();
-    MainPage.listOfAwardsBestResults.isDisplayed();
-    MainPage.listOfAwardsBestUsability.isDisplayed();
-    MainPage.listOfAwardsLeader.isDisplayed();
-    MainPage.listOfAwardsBestMomentumLeader.isDisplayed();
-    MainPage.listOfAwardsMostLikelyToRecommend.isDisplayed();
+    await expect(MainPage.listOfAwards).toBeDisplayed();
+    await expect(MainPage.listOfAwardsBestResults).toBeDisplayed();
+    await expect(MainPage.listOfAwardsBestUsability).toBeDisplayed();
+    await expect(MainPage.listOfAwardsLeader).toBeDisplayed();
+    await expect(MainPage.listOfAwardsBestMomentumLeader).toBeDisplayed();
+    await expect(MainPage.listOfAwardsMostLikelyToRecommend).toBeDisplayed();  
+   
+    
+    
     // MainPage.listOfAwardsBestMostImplementable.isDisplayed();
     // MainPage.listOfAwardsBestRelationship.isDisplayed();
     // MainPage.listOfAwardsEaseOfUse.isDisplayed();
