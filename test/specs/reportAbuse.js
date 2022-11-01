@@ -13,8 +13,7 @@ describe("Report Abuse TC-005", () => {
     await TelnyxPage.open('');
     await Base.cookiesButton.click();
     await MainPage.reportAbuseLink.scrollIntoView();
-    await MainPage.reportAbuseLink.click();
-    await expect(browser).toHaveUrlContaining('https://');
+    await MainPage.reportAbuseLink.click();    
     await expect(browser).toHaveUrlContaining('report-abuse');
     await ReportAbusePage.reCaptchaImage.scrollIntoView();
     await expect(ReportAbusePage.reCaptchaImage).toBeDisplayed();
