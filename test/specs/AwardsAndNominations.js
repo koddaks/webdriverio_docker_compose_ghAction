@@ -1,4 +1,4 @@
-cc
+const MainPage = require('../pageobjects/main.page');
 const TelnyxPage = require('../pageobjects/telnyx_page');
 const Base = require('../pageobjects/base');
 

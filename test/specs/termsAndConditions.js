@@ -10,7 +10,7 @@ describe("Terms and Conditions TC-007", () => {
     await Base.cookiesButton.click();
     await MainPage.termsAndConditionsLink.scrollIntoView();
     await MainPage.termsAndConditionsLink.click();
-    await expect(browser).toHaveUrlContaining('/terms-and-conditions');
+    await expect(browser).toHaveUrlContaining('terms-and-conditions');
 
     await TermsAndConditionsPage.termsAndConditionsHeader.scrollIntoView();
 

@@ -9,7 +9,7 @@ describe("Careers TC-002", () => {
     await Base.cookiesButton.click();
     await MainPage.careersLink.scrollIntoView();
     await MainPage.careersLink.click();
-    await expect(browser).toHaveUrlContaining('/careers');
+    await expect(browser).toHaveUrlContaining('careers');
     await expect(Careers.videoInCareersPage).toBeDisplayed();
   });
 });

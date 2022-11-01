@@ -15,7 +15,7 @@ describe("Report Abuse TC-005", () => {
     await MainPage.reportAbuseLink.scrollIntoView();
     await MainPage.reportAbuseLink.click();
     await expect(browser).toHaveUrlContaining('https://');
-    await expect(browser).toHaveUrlContaining('/report-abuse');
+    await expect(browser).toHaveUrlContaining('report-abuse');
     await ReportAbusePage.reCaptchaImage.scrollIntoView();
     await expect(ReportAbusePage.reCaptchaImage).toBeDisplayed();
     
