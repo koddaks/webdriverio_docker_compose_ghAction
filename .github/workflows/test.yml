@@ -17,9 +17,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Start containers
-      run: docker-compose -f "selenium-4-grid.yml" up -d --build
-
     - name: Install node
       uses: actions/setup-node@v2
       with:
@@ -28,8 +25,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Start containers
+      run: docker-compose -f "selenium-4-grid.yml" up -d --build
+
     - name: Run tests-->Make Allure-report-->Stop containers
-      run: npm run test_with_docker
+      run: npm run wdio_docker
+      run: npm run posttest
+      run: npm run docker_down
     
     - name: Deploy 🚀
       if: always()
