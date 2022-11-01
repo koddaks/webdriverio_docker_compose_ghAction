@@ -28,10 +28,14 @@ jobs:
     - name: Start containers
       run: docker-compose -f "selenium-4-grid.yml" up -d --build
 
-    - name: Run tests-->Make Allure-report-->Stop containers
+    - name: Run tests
       run: npm run wdio_docker
+
+    - name: Make Allure-report
       run: npm run posttest
-      run: npm run docker_down
+
+    - name: Stop containers
+      run: docker-compose -f ./selenium-4-grid.yml down
     
     - name: Deploy 🚀
       if: always()
