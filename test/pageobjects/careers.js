@@ -1,6 +1,6 @@
 class Careers{
   get videoInCareersPage() {
-    return $('[id="player"]');
+    return $('iframe[title="Careers"]');
 }
 
 ;}
