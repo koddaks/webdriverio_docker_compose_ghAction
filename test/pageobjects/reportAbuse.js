@@ -9,6 +9,10 @@ class ReportAbusePage {
   get submitBtn(){
     return $('[type="submit"]');
   }
+  get reCaptcha(){   
+    return $('[id="g-recaptcha"]');
+  }
+  
   
 }
 module.exports = new ReportAbusePage();
