@@ -34,7 +34,11 @@ jobs:
 
     - name: Make Allure-report
       if: always()
-      run: npm run allure:report    
+      run: npm run allure:report
+
+    - name: Stop containers
+      if: always()
+      run: npm run docker_down
     
     - name: Deploy 🚀
       if: always()
