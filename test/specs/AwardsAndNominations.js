@@ -1,4 +1,4 @@
-const MainPage = require('../pageobjects/main.page');
+cc
 const TelnyxPage = require('../pageobjects/telnyx_page');
 const Base = require('../pageobjects/base');
 
@@ -12,14 +12,6 @@ describe("Awards and nominations for 2022 year TC-003", () => {
     await expect(MainPage.listOfAwardsBestUsability).toBeDisplayed();
     await expect(MainPage.listOfAwardsLeader).toBeDisplayed();
     await expect(MainPage.listOfAwardsBestMomentumLeader).toBeDisplayed();
-    await expect(MainPage.listOfAwardsMostLikelyToRecommend).toBeDisplayed();  
-   
-    
-    
-    // MainPage.listOfAwardsBestMostImplementable.isDisplayed();
-    // MainPage.listOfAwardsBestRelationship.isDisplayed();
-    // MainPage.listOfAwardsEaseOfUse.isDisplayed();
-   
-    
+    await expect(MainPage.listOfAwardsMostLikelyToRecommend).toBeDisplayed();
   });
 });

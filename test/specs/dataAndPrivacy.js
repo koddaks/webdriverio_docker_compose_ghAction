@@ -13,7 +13,7 @@ describe("Data And Privacy TC-004", () => {
     await Base.cookiesButton.click();
     await MainPage.dataPrivacyLink.scrollIntoView();
     await MainPage.dataPrivacyLink.click();
-    await expect(browser).toHaveUrlContaining('data-privacy')
+    await expect(browser).toHaveUrlContaining('/data-privacy');
     await expect(DataPrivacy.dataPrivacyImageInTheTop).toBeDisplayed();
     
     

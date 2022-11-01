@@ -1,4 +1,6 @@
-class SupportCenter{
+const Page = require('./page');
+class SupportCenter extends Page {
+
   get searchField(){
     return $('[name="q"]');
   }
@@ -7,6 +9,10 @@ class SupportCenter{
   }
   get searchResultSignUpImage(){
     return $('[alt*="Sign-up form"]');
+  }
+
+  open () {
+    return browser.url(`https://support.telnyx.com/en/`)
   }
   
   
