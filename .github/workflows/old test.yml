@@ -34,7 +34,7 @@ jobs:
 
     - name: Make Allure-report
       if: always()
-      run: npm run allure:report    
+      run: npm run allure:report
     
     - name: Deploy 🚀
       if: always()
