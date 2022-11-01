@@ -29,6 +29,7 @@ jobs:
       run: npm install
 
     - name: Run tests-->Make Allure-report-->Stop containers
+      if: always()
       run: npm run test_with_docker
     
     - name: Deploy 🚀
