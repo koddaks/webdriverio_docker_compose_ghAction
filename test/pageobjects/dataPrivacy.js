@@ -4,4 +4,4 @@ class DataPrivacy {
   }
   
   }
-  module.exports = new DataPrivacy()
+  module.exports = new DataPrivacy();
