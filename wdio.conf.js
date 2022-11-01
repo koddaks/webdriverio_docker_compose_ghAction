@@ -94,7 +94,7 @@ exports.config = {
       maxInstances: 2,
       //
       browserName: "MicrosoftEdge",
-      // 'moz:firefoxOptions': {
+      // 'ms:edgeOptions': {
       //     args: ['-headless']
       // },
       acceptInsecureCerts: true,
