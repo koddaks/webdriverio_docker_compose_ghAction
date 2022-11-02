@@ -11,7 +11,7 @@ describe("Redirect to Facebook TC-008", () => {
     await Base.cookiesButton.click();
     await MainPage.facebookLink.scrollIntoView();
     await MainPage.facebookLink.click();
-    await browser.getWindowHandle('facebook');
+    // await browser.getWindowHandle('facebook');
     await browser.getUrl();
     // browser.getWindowHandle('telnyx.com');    
     // await browser.closeWindow();    
