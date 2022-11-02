@@ -11,8 +11,9 @@ describe("Redirect to Twitter TC-009", () => {
     await Base.cookiesButton.click();
     await MainPage.twitterLink.scrollIntoView();
     await MainPage.twitterLink.click();
-    browser.getWindowHandle('telnyx.com');
-    await browser.closeWindow();
+    browser.getWindowHandle('twitter');
+    // browser.getWindowHandle('telnyx.com');
+    // await browser.closeWindow();
     await expect(browser).toHaveUrlContaining('https://twitter.com');    
   });
 });
