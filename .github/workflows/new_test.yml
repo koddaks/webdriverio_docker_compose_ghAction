@@ -35,6 +35,10 @@ jobs:
     - name: Make Allure-report
       if: always()
       run: npm run allure:report
+
+    - name: Stop containers
+      if: always()
+      run: docker-compose -f "docker-compose.yml" down
     
     - name: Deploy 🚀
       if: always()
@@ -44,7 +48,3 @@ jobs:
         folder: allure-report
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Stop containers
-      if: always()
-      run: docker-compose -f "docker-compose.yml" down
