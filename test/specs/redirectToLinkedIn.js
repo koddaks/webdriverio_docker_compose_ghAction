@@ -11,6 +11,14 @@ describe("Redirect to LinkedIn TC-010", () => {
     await Base.cookiesButton.click();
     await MainPage.linkedinLink.scrollIntoView();
     await MainPage.linkedinLink.click();
-    await expect(browser).toHaveUrlContaining('https://www.linkedin.com');    
+    browser.getWindowHandle('telnyx.com');    
+    await browser.closeWindow();    
+    await expect(browser).toHaveUrlContaining('https://www.linkedin.com'); 
+     
   });
 });
+// await browser.switchToWindow("linkedin.com");
+    // await browser.switchToWindow("telnyx.com");
+    // await browser.closeWindow();
+    // await browser.pause(3000);
+    // await browser.getUrl();
