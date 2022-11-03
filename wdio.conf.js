@@ -25,7 +25,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/verifyAPI.js"],
+  specs: ["./test/specs/**/*.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -73,27 +73,27 @@ exports.config = {
       // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
       // excludeDriverLogs: ['bugreport', 'server'],
     },
-    {
-      // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-      // grid with only 5 firefox instances available you can make sure that not more than
-      // 5 instances get started at a time.
-      maxInstances: 2,
-      //
-      browserName: "firefox",
-      'moz:firefoxOptions': {
-        args: [
-          // '-headless'
-          '--window-size=1900,1080'
-      ]
-      //     // binary: 'C:/Program Files/Mozilla Firefox/firefox.exe'
-      // executablePath: 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
-      },
-      acceptInsecureCerts: true,
-      // If outputDir is provided WebdriverIO can capture driver session logs
-      // it is possible to configure which logTypes to include/exclude.
-      // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-      // excludeDriverLogs: ['bugreport', 'server'],
-    },
+    // {
+    //   // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+    //   // grid with only 5 firefox instances available you can make sure that not more than
+    //   // 5 instances get started at a time.
+    //   maxInstances: 2,
+    //   //
+    //   browserName: "firefox",
+    //   'moz:firefoxOptions': {
+    //     args: [
+    //       // '-headless'
+    //       '--window-size=1900,1080'
+    //   ]
+    //   //     // binary: 'C:/Program Files/Mozilla Firefox/firefox.exe'
+    //   // executablePath: 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
+    //   },
+    //   acceptInsecureCerts: true,
+    //   // If outputDir is provided WebdriverIO can capture driver session logs
+    //   // it is possible to configure which logTypes to include/exclude.
+    //   // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+    //   // excludeDriverLogs: ['bugreport', 'server'],
+    // },
     {
       // maxInstances can get overwritten per capability. So if you have an in-house Selenium
       // grid with only 5 firefox instances available you can make sure that not more than

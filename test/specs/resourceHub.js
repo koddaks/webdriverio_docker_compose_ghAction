@@ -8,7 +8,6 @@ const ResourceHubPage = require('../pageobjects/resourceHub');
 describe("Resource Hub TC-011", () => {
   it('Should  availability eight headers and having appropriate images for them', async () => {
     await TelnyxPage.open('');
-    await browser.setWindowSize(width, height);
     await Base.cookiesButton.click();
     await MainPage.resourceHubLink.scrollIntoView();
     await MainPage.resourceHubLink.click();    

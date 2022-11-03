@@ -65,7 +65,7 @@ exports.config = {
       'goog:chromeOptions': {
           args: [
             // '--headless'
-            '--window-size=1440,735'
+            '--window-size=1900,1080'
           ]
       },
       acceptInsecureCerts: true
@@ -85,7 +85,7 @@ exports.config = {
       'moz:firefoxOptions': {
           args: [
             // '-headless'
-            '--window-size=1440,735'
+            '--window-size=1900,1080'
           ]
       },
       acceptInsecureCerts: true
@@ -105,7 +105,7 @@ exports.config = {
       'ms:edgeOptions': {
           args: [
             // '-headless'
-            '--window-size=1440,735'
+            '--window-size=1900,1080'
         ]
       },
       acceptInsecureCerts: true
