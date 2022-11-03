@@ -12,6 +12,10 @@ class ReportAbusePage {
   get reCaptcha(){   
     return $('[id="g-recaptcha"]');
   }
+  get oldreCaptcha(){   
+    return $('[id="recaptcha-accessible-status"]');
+  }
+  
   
   
 }

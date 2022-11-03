@@ -82,8 +82,11 @@ class MainPage {
   get numberLookupLink(){
     return $('div [data-e2e="Footer--navItem-products"] >div a[href="/number-lookup"]');
   }
+  get globalNumbersLink(){
+    return $('div [data-e2e="Footer--navItem-products"] >div a[href="/products/phone-numbers"]');
+  }
   get verifyApiLink(){
-    return cy.get('div [data-e2e="Footer--navItem-products"] >div a[href="/products/verify-api"]');
+    return $('div [data-e2e="Footer--navItem-products"] >div a[href="/products/verify-api"]');
   }
   get sliderTrackMakeOutboundCalls(){
     return $(':nth-child(4) > .telnyx-slider > .ant-slider > .ant-slider-track');

@@ -25,7 +25,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/*.js"],
+  specs: ["./test/specs/**/verifyAPI.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -60,9 +60,13 @@ exports.config = {
       maxInstances: 2,
       //
       browserName: "chrome",
-      // 'goog:chromeOptions': {
-      //     args: ['--headless']
-      // },
+      'goog:chromeOptions': {
+          args: [
+            // '--headless'
+            '--window-size=1900,1080'
+          ]
+          
+      },
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
@@ -76,11 +80,14 @@ exports.config = {
       maxInstances: 2,
       //
       browserName: "firefox",
-      // 'moz:firefoxOptions': {
-      //     // args: ['-headless']
+      'moz:firefoxOptions': {
+        args: [
+          // '-headless'
+          '--window-size=1900,1080'
+      ]
       //     // binary: 'C:/Program Files/Mozilla Firefox/firefox.exe'
       // executablePath: 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
-      // },
+      },
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
@@ -94,9 +101,13 @@ exports.config = {
       maxInstances: 2,
       //
       browserName: "MicrosoftEdge",
-      // 'ms:edgeOptions': {
-      //     args: ['-headless']
-      // },
+      'ms:edgeOptions': {       
+          args: [
+            // '-headless'
+            '--window-size=1900,1080'
+        ]
+      
+    },
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.

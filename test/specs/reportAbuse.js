@@ -14,9 +14,6 @@ describe("Report Abuse TC-005", () => {
     await expect(browser).toHaveUrlContaining('report-abuse');    
     await ReportAbusePage.reCaptcha.scrollIntoView();
     await expect(ReportAbusePage.reCaptcha).toBeDisplayed();
-    
-    
-    
-    
+
   });
 });
